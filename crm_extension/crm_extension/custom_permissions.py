@@ -3,10 +3,7 @@ import json
 import frappe
 
 
-# Roles that see every lead, whatever other roles or branch permissions they hold.
-# Checked before every other rule, so this also overrides the Relationship Manager
-# restriction for a user who carries both.
-SYSTEM_ROLES = {"System Manager", "Core Team"}
+SYSTEM_ROLES = {"System Manager"}
 
 TELECALLER_ROLES = {"Tele Caller", "Telecaller","Sales User"}
 BRANCH_ACCESS_ROLES = {"Branch Manager", "Stake Holder", "Stakeholder"}
